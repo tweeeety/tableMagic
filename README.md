@@ -1,4 +1,6 @@
 tableMagic
 ==========
+mysqlなんかのDBデータからテーブルタグを生成するライブラリ＆それをラップしたjqueryプラグイン
 
-script that converts to a table tag the data in the database in javascript
+例
+==========
