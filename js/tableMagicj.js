@@ -433,7 +433,7 @@ $.fn.tableMagic = function(data, orderArr, titleHash, options){
   var opts = $.extend({}, $.fn.tableMagic.defaults, options);
   
   // tableMagic instance
-  var table = new TableMagic(data, orderArr, titleHash, opt).get();
+  var table = new TableMagic(data, orderArr, titleHash, opts).get();
   
   // html
   elm.html(table);
