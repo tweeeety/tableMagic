@@ -446,7 +446,7 @@ $.fn.tableMagic = function(data, orderArr, titleHash, options){
 }
 
 $.fn.tableMagic.defaults = {
-  tableClassName    : "table table-bordered",
+  tableClassName    : "my-table table-bordered",
     
   addThead          : true,
   trOddClassName    : "trOdd",
