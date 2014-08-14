@@ -19,8 +19,8 @@ json形式のMySQLデータなどをテーブルタグ(table)に変換して指�
 * データの行と列の回転
 
 ## Demo
-### サンプル
-サンプルとして3パターンくらい載せます。  
+### サンプルデータ
+描画サンプルとして3パターンくらい載せますが、  
 パターンに共通したデータはこんな感じ  
 ```javascript
 var sampleData = [
@@ -31,14 +31,13 @@ var sampleData = [
   {"totaled_date":"2014-01-26","entry":"4","invite":"0","sales":"14600","sales_dau":1,"sales_mau":39,"sales_uu":0,"mau":45,"dau":0}
 ];
 ```
-※実際はajaxなんかでjson形式で受け取ると思いますが、ここではjsonで受け取った体で変数へ入れてます
+※実際はajaxなんかを使ってjson形式で受け取ると思いますが、ここではjsonで受け取った体で変数へ入れてます
 
 ### sample01
 説明よりサンプルをってことで、以下は一番シンプルなサンプルです  
 
 * html
 ```html
-<body>
 <div id="my-table"></div>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -48,7 +47,6 @@ $(function(){
   $("#my-table").tableMagic(sampleData);
 });
 </script>
-</body>
 ```
 * 結果  
 
@@ -62,7 +60,6 @@ $(function(){
 
 * html
 ```html
-<body>
 <div id="my-table"></div>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -90,11 +87,9 @@ $(function(){
     titleOrderArr : titleOrderArr,
     titleHash : titleHash
   };
-  //if( opt && opt.callback ) opt.callback = function() { lineMarker($(".my-table"), opt) };
   $("#my-table").tableMagic(sampleData, opt);
 });
 </script>
-</body>
 ```
 
 * 結果  
@@ -108,6 +103,47 @@ $(function(){
 * 1レコード内の表示順序
 * タイトル文字列
 * 集計する(sum)＆表を回転してtable描画
+
+renderNameオプションでいくつかの描画(tableタグの生成)形式が指定できます
+
+* html
+```html
+<div id="my-table"></div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/tableMagicj.js"></script>
+<script>
+$(function(){
+  // title行の順番を指定
+  var titleOrderArr = ['totaled_date', 'dau','entry','invite','mau','sales','sales_dau','sales_mau','sales_uu'];
+  
+  // title行の文字列を指定
+  var titleHash = {
+    dau: 'dau',
+    entry: '登録者',
+    invite: '招待者',
+    mau: 'mau',
+    sales: '売上',
+    sales_dau: '売上day',
+    sales_mau: '売上mau',
+    sales_uu: '売上uu',
+    totaled_date: "日付"
+  };
+  
+  // オプション指定
+  var opt = {
+    titleOrderArr : titleOrderArr,
+    titleHash : titleHash,
+    renderName : "sumUpColRotate",
+  };
+  $("#my-table").tableMagic(sampleData, opt);
+});
+</script>
+```
+
+* 結果  
+
+![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample03.png)
 
 
 ## Requirement
@@ -124,4 +160,32 @@ jQueryプラグインで使う場合はもちろんjqueryが必要です。
 
 ```
 
-###オプション
+###Options
+tableMagicに引数で渡すオプションです
+
+* titleOrderArr[array]  
+  タイトル行の順序指定配列  
+
+* titleHash[object]  
+  タイトル文字列の連想配列  
+
+* tableClassName[string]  
+  tableタグに挿入するclass名
+
+* noTitleRow[boolean]  
+  タイトル行の有り無し
+
+
+addThead
+trOddClassName
+trEvenClassName
+trHeaderClassName
+tdHeaderClassName
+  
+firstRowTd2Th
+firstColTd2Th
+rendereCallback
+  
+renderName
+
+callback
