@@ -155,7 +155,7 @@ jQueryプラグインで使う場合はもちろんjqueryが必要です。
 
 ## Usage
 ###基本
-基本はこんな感じです
+基本の使い方
 ```html
 <!-- jquery -->
 <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -169,7 +169,7 @@ $(function(){
 </script>
 ```
 
-tableMagic.jsを読み込んだ場合はjavascritライブラリなのでtableタグを返却します
+tableMagic.js(talbeMagic`j`.jsではない)を読み込んだ場合はjavascritライブラリなのでtableタグを返却します
 ```html
 <script src="js/tableMagic.js"></script>
 <script>
