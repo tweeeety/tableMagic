@@ -31,12 +31,25 @@ $("#my-table").tableMagic(testdata);
 </script>
 </body>
 ```
-
-<iframe width="100%" height="300" src="http://jsfiddle.net/tweeeety/658n084g/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
 * 結果  
 
 ![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample.png)
 
 
-## aaaa
+## Demo
+
+## Requirement
+jQueryプラグインで使う場合はもちろんjqueryが必要です。
+バージョンでの動作確認まではしてませんが、だいたい使えるんじゃなかなーってくらいです。
+```javascript
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+```
+
+## Usage
+###基本
+基本はこんな感じです
+```
+
+```
+
+###オプション
