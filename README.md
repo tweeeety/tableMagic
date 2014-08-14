@@ -163,19 +163,31 @@ jQueryプラグインで使う場合はもちろんjqueryが必要です。
 ###Options
 tableMagicに引数で渡すオプションです
 
-* `titleOrderArr` [array] … タイトル行の順序指定配列  
+* `titleOrderArr` [array] … タイトル行の順序指定配列
+
 * `titleHash` [object] … タイトル文字列の連想配列
+
 * `tableClassName` [string] … tableタグに挿入するclass名 
+
 * `noTitleRow` [boolean] … タイトル行の有り無し
+
 * `addThead` [boolean] … Theadタグの挿入の有無
+
 * `trOddClassName` [string] … 奇数行のtrタグに挿入するclass名
+
 * `trEvenClassName` [string] … 偶数行のtrタグに挿入するclass名
+
 * `trHeaderClassName` [string] … タイトル行(1行目)のtrタグに挿入するclass名
+
 * `tdHeaderClassName` [string] … タイトル列(1列目)のtdタグに挿入するclass名
+
 * `firstRowTd2Th` [boolean] … タイトル行のtdをthに変換するか否か
+
 * `firstColTd2Th` [boolean] … タイトル列のtdをthに変換するか否か
+
 * `rendereCallback` [function] … 表示後に呼び出すcallback
 * `renderName` [string] … 描画(tableタグの生成)のフォーマット。指定可能文字列は以下
+
     * `normal` … そのまま描画
     * `sumUpCol` … 列で集計
     * `aveCol` … 列で平均
@@ -187,5 +199,6 @@ tableMagicに引数で渡すオプションです
     * `aveColExceptZeroRotate` … 列で平均してから回転。ただし、数値が0のｶﾗﾑは母数として数えない
     * `rotateAveCol` … 回転してから列で平均
     * `rotateAveColExceptZero` … 回転してから列で平均。ただし、数値が0のｶﾗﾑは母数として数えない
+    
 * `callback` [function] … 表示後に呼び出すcallback
 
