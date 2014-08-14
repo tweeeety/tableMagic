@@ -181,7 +181,6 @@ tableMagicに引数で渡すオプションです
     * `aveCol` … 列で平均
     * `aveColExceptZero` … 列で平均。ただし、数値が0(もしくは無い)のｶﾗﾑは母数として数えない
     * `rotateNormal` … ノーマルのものを回転
-    
     * `sumUpColRotate` … 列で集計してから回転
     * `rotateSumUpCol` … 回転してから列で集計
     * `aveColRotate` … 列で平均してから回転
