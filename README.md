@@ -143,7 +143,7 @@ $(function(){
 
 * 結果  
 
-![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample03.png)
+![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample04.png)
 
 
 ## Requirement
