@@ -186,8 +186,8 @@ tableMagicに引数で渡すオプションです
 * `firstColTd2Th` [boolean] … タイトル列のtdをthに変換するか否か
 
 * `rendereCallback` [function] … 表示後に呼び出すcallback
-* `renderName` [string] … 描画(tableタグの生成)のフォーマット。指定可能文字列は以下
 
+* `renderName` [string] … 描画(tableタグの生成)のフォーマット。指定可能文字列は以下
     * `normal` … そのまま描画
     * `sumUpCol` … 列で集計
     * `aveCol` … 列で平均
