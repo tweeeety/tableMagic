@@ -163,17 +163,15 @@ jQueryプラグインで使う場合はもちろんjqueryが必要です。
 ###Options
 tableMagicに引数で渡すオプションです
 
-* titleOrderArr [array] : タイトル行の順序指定配列  
+* titleOrderArr [array] … タイトル行の順序指定配列  
+* titleHash [object] … タイトル文字列の連想配列
+* tableClassName [string] … tableタグに挿入するclass名 
+* noTitleRow [boolean] … タイトル行の有り無し
+* addThead [boolean] … Theadタグの挿入の有無
+* trOddClassName [boolean] … Theadタグの挿入の有無
 
-* titleHash [object] タイトル文字列の連想配列  
-
-* tableClassName [string] : tableタグに挿入するclass名
-
-* noTitleRow [boolean] : タイトル行の有り無し
 
 
-addThead
-trOddClassName
 trEvenClassName
 trHeaderClassName
 tdHeaderClassName
