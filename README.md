@@ -1,6 +1,6 @@
 tableMagic
 ==========
-json形式で受け取ったDBデータからテーブルタグ(table)を生成するライブラリと、  
+json形式で受け取ったDBデータからテーブルタグ(table)を生成するライブラリと  
 それをラップしたjqueryプラグインです。  
 
 ※補足  
@@ -23,6 +23,7 @@ json形式のMySQLデータなどをテーブルタグ(table)に変換して指�
 説明よりサンプルをってことで、以下一番シンプルなサンプルです
 
 * DBデータ
+※実際はajaxなんかでjson形式で受け取ると思いますが、ここでは受け取った体で変数へ入れてます
 ```javascript
 var sampleData = [
   {"totaled_date":"2014-01-16","entry":"2","invite":"0","sales":"65422","sales_dau":3,"sales_mau":33,"sales_uu":0,"mau":37,"dau":14},
@@ -41,7 +42,9 @@ var sampleData = [
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/tableMagicj.js"></script>
 <script>
-$("#my-table").tableMagic(sampleData);
+$(function(){
+  $("#my-table").tableMagic(sampleData);
+});
 </script>
 </body>
 ```
@@ -49,12 +52,12 @@ $("#my-table").tableMagic(sampleData);
 
 ![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample.png)
 
-#### sample02
+### sample02
 
 
 ## Requirement
-jQueryプラグインで使う場合はもちろんjqueryが必要です。
-バージョンでの動作確認まではしてませんが、だいたい使えるんじゃなかなーってくらいです。
+jQueryプラグインで使う場合はもちろんjqueryが必要です。  
+バージョンでの動作確認まではしてませんが、だいたい使えるんじゃなかなーってくらいです。  
 ```javascript
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 ```
