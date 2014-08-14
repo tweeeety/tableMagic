@@ -19,11 +19,9 @@ json形式のMySQLデータなどをテーブルタグ(table)に変換して指�
 * データの行と列の回転
 
 ## Demo
-### sample01
-説明よりサンプルをってことで、以下一番シンプルなサンプルです
-
-* DBデータ
-※実際はajaxなんかでjson形式で受け取ると思いますが、ここでは受け取った体で変数へ入れてます
+### サンプル
+サンプルとして3パターンくらい載せます。  
+パターンに共通したデータはこんな感じ  
 ```javascript
 var sampleData = [
   {"totaled_date":"2014-01-16","entry":"2","invite":"0","sales":"65422","sales_dau":3,"sales_mau":33,"sales_uu":0,"mau":37,"dau":14},
@@ -33,6 +31,10 @@ var sampleData = [
   {"totaled_date":"2014-01-26","entry":"4","invite":"0","sales":"14600","sales_dau":1,"sales_mau":39,"sales_uu":0,"mau":45,"dau":0}
 ];
 ```
+※実際はajaxなんかでjson形式で受け取ると思いますが、ここではjsonで受け取った体で変数へ入れてます
+
+### sample01
+説明よりサンプルをってことで、以下は一番シンプルなサンプルです  
 
 * html
 ```html
@@ -53,6 +55,59 @@ $(function(){
 ![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample02.png)
 
 ### sample02
+オプションで以下を指定したサンプルです
+>
+* 1レコード内の表示順序
+* タイトル文字列
+
+* html
+```html
+<body>
+<div id="my-table"></div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/tableMagicj.js"></script>
+<script>
+$(function(){
+  // title行の順番を指定
+  var titleOrderArr = ['totaled_date', 'dau','entry','invite','mau','sales','sales_dau','sales_mau','sales_uu'];
+  
+  // title行の文字列を指定
+  var titleHash = {
+    dau: 'dau',
+    entry: '登録者',
+    invite: '招待者',
+    mau: 'mau',
+    sales: '売上',
+    sales_dau: '売上day',
+    sales_mau: '売上mau',
+    sales_uu: '売上uu',
+    totaled_date: "日付"
+  };
+  
+  // オプション指定
+  var opt = {
+    titleOrderArr : titleOrderArr,
+    titleHash : titleHash
+  };
+  //if( opt && opt.callback ) opt.callback = function() { lineMarker($(".my-table"), opt) };
+  $("#my-table").tableMagic(sampleData, opt);
+});
+</script>
+</body>
+```
+
+* 結果  
+
+![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample03.png)
+
+
+### sample03
+以下を指定した形のサンプルです
+>
+* 1レコード内の表示順序
+* タイトル文字列
+* 集計する(sum)＆表を回転してtable描画
 
 
 ## Requirement
