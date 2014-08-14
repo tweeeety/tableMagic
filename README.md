@@ -156,8 +156,26 @@ jQueryプラグインで使う場合はもちろんjqueryが必要です。
 ## Usage
 ###基本
 基本はこんな感じです
+```html
+<!-- jquery -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<!-- script -->
+<script src="js/tableMagicj.js"></script>
+<script>
+$(function(){
+  $("#my-table").tableMagic(sampleData, opt);
+});
+</script>
 ```
 
+tableMagic.jsを読み込んだ場合はjavascritライブラリなのでtableタグを返却します
+```html
+<script src="js/tableMagic.js"></script>
+<script>
+var table = new TableMagic(data, opts).get();
+console.log(table); // <table>...</table>
+</script>
 ```
 
 ###Options
