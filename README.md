@@ -1,12 +1,26 @@
 tableMagic
 ==========
-json形式で受け取ったDBデータからテーブルタグ(table)を生成するライブラリです。  
-また、それをラップしたjqueryプラグインです。  
+json形式で受け取ったDBデータからテーブルタグ(table)を生成するライブラリと、
+それをラップしたjqueryプラグインです。  
+
+###### ※補足
 名前は由来は作った当事、[imageMagic](http://www.imagemagick.org/script/perl-magick.php)を触ってたのでなんとなくパクりましたw
 
 ## Description
-json形式のMySQLデータなどをテーブルタグに変換します。  
-説明よりサンプルをってことで、以下サンプルです
+json形式のMySQLデータなどをテーブルタグ(table)に変換して指定したjqueryのcontentに埋め込みます。  
+
+また、オプションにより以下のことができます
+
+* テーブルタグの生成(contentへの埋め込み)
+* 1レコード内の表示順序の制御
+* レコードのタイトル文字列の指定
+* 簡易集計(列での合計、平均)
+* 描画後のcallback呼び出し
+* データの行と列の回転
+
+## Demo
+### sample01
+説明よりサンプルをってことで、以下一番シンプルなサンプルです
 
 * DBデータ
 ```javascript
@@ -27,7 +41,7 @@ var sampleData = [
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/tableMagicj.js"></script>
 <script>
-$("#my-table").tableMagic(testdata);
+$("#my-table").tableMagic(sampleData);
 </script>
 </body>
 ```
@@ -35,8 +49,8 @@ $("#my-table").tableMagic(testdata);
 
 ![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample.png)
 
+### sample02
 
-## Demo
 
 ## Requirement
 jQueryプラグインで使う場合はもちろんjqueryが必要です。
