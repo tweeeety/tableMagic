@@ -50,7 +50,7 @@ $(function(){
 ```
 * 結果  
 
-![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample.png)
+![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample02.png)
 
 ### sample02
 
