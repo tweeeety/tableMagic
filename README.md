@@ -230,4 +230,4 @@ tableMagicに引数で渡すオプションです
 
 ## License
 * MIT  
-  *see LICENSE
+    * see LICENSE
