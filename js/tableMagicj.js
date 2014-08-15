@@ -404,7 +404,7 @@ var TableMagic = ( function(TableMagic, undefined ) {
    * initialize
    ----------------*/
   TableMagic.prototype.initialize = function(){
-    var ddm = DbDataManipulator.create(this.data, this.orderArr, this.titleHash, {label:{sum:"合計", ave:"平均"}, noTitleRow: this.opt.noTitleRow||false});
+    var ddm = DbDataManipulator.create(this.data, this.orderArr, this.titleHash, {label:this.opt.label, noTitleRow: this.opt.noTitleRow||false});
     this.r = Renderers.create(ddm, this.opt);
     return this;
   };
@@ -460,7 +460,9 @@ $.fn.tableMagic.defaults = {
   firstRowTd2Th     : true,
   firstColTd2Th     : true,
   rendereCallback   : null,
-    
+  
+  label: {sum:"合計", ave:"平均"},
+  
   render            : "normal"
 };
 
