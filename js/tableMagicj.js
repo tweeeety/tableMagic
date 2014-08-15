@@ -1,7 +1,8 @@
 /**
- * @license tweeeety v0.8.1
+ * @license TableMagic v0.8.1
  * (c) 2011-2014 tweeeety, Ryuichi Murata http://tweeeety.com
  * License: MIT
+ * http://opensource.org/licenses/mit-license.php
  */
 ;(function(global, $) {
 var TableMagic = ( function(TableMagic, undefined ) {
