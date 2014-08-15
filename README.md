@@ -222,6 +222,8 @@ tableMagicに引数で渡すオプションです
 * `callback` [function] … 表示後に呼び出すcallback
 
 ## Todo
+* テスト
+* オプションの確認あんましできてない
 
 ## Author
 * Tweeeety, Ryuichi Murata
