@@ -221,3 +221,11 @@ tableMagicに引数で渡すオプションです
     
 * `callback` [function] … 表示後に呼び出すcallback
 
+## Todo
+
+## Author
+* Tweeeety, Ryuichi Murata
+
+## License
+* MIT
+    *see LICENSE

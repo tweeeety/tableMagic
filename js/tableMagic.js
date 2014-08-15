@@ -3,7 +3,7 @@
  * (c) 2011-2014 tweeeety, Ryuichi Murata http://tweeeety.com
  * License: MIT
  */
-;(function(global, $) {
+//;(function(global, $) {
 var TableMagic = ( function(TableMagic, undefined ) {
   // SimpleDomManipulator
   var SimpleDomManipulator = function() {
@@ -422,45 +422,3 @@ var TableMagic = ( function(TableMagic, undefined ) {
   };
   return TableMagic;
 })({});
-
-$.fn.tableMagic = function(data, options){
-  // check arguments
-  if(!data) throw "error: no data";
-  
-  // backup this
-  var elm = this;
-  
-  // default options
-  var opts = $.extend({}, $.fn.tableMagic.defaults, options);
-  
-  // tableMagic instance
-  var table = new TableMagic(data, opts).get();
-  
-  // html
-  elm.html(table);
-  
-  // callback
-  if( options && typeof options.callback == 'function' ) {
-    options.callback();
-  }
-  return this;
-}
-
-$.fn.tableMagic.defaults = {
-  tableClassName    : "my-table table-bordered",
-    
-  addThead          : true,
-  trOddClassName    : "trOdd",
-  trEvenClassName   : "trEven",
-  trHeaderClassName : "trHeader",
-  tdHeaderClassName : "tdHeader",
-    
-  firstRowTd2Th     : true,
-  firstColTd2Th     : true,
-  rendereCallback   : null,
-    
-  render            : "normal"
-};
-
-
-}(window || {}, jQuery));

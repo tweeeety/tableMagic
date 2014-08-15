@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>tableMagic</title>
+<link rel="stylesheet" type="text/css" href="css/tableMagic.css" media="all">
+</head>
+<body>
+<!-- div -->
+<div id="my-table"></div>
+
+<!-- jquery -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<!-- sample data -->
+<script src="js/sampleData.js"></script>
+
+<!-- script -->
+<script src="js/tableMagic.js"></script>
+
+<!-- main -->
+<script>
+$(function(){
+  var table = new TableMagic(testdata, opt).get();
+  $("#my-table").html(table);
+});
+</script>
+</body>
+</html>

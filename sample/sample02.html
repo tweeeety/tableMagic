@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>tableMagic</title>
+<link rel="stylesheet" type="text/css" href="../css/tableMagic.css" media="all">
+<style>
+.cellRow {
+  background-color: #ff0000;
+}
+.cellCol {
+  background-color: #ff0000;
+}
+</style>
+</head>
+<body>
+<!-- div -->
+<div id="my-table"></div>
+
+<!-- jquery -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<!-- sample data -->
+<!--<script src="js/sampleData.js"></script>-->
+
+<!-- script -->
+<!--<script src="js/callback.js"></script>-->
+<script src="../js/tableMagicj.js"></script>
+
+<!-- main -->
+<script>
+$(function(){
+  var sampleData = [
+    {"totaled_date":"2014-01-16","entry":"2","invite":"0","sales":"65422","sales_dau":3,"sales_mau":33,"sales_uu":0,"mau":37,"dau":14},
+    {"totaled_date":"2014-01-17","entry":"2","invite":"0","sales":"2039","sales_dau":2,"sales_mau":33,"sales_uu":1,"mau":37,"dau":14},
+    {"totaled_date":"2014-01-24","entry":"3","invite":"0","sales":"348120","sales_dau":8,"sales_mau":37,"sales_uu":0,"mau":43,"dau":0},
+    {"totaled_date":"2014-01-25","entry":"1","invite":"0","sales":"14570","sales_dau":4,"sales_mau":39,"sales_uu":1,"mau":45,"dau":0},
+    {"totaled_date":"2014-01-26","entry":"4","invite":"0","sales":"14600","sales_dau":1,"sales_mau":39,"sales_uu":0,"mau":45,"dau":0}
+  ];
+  $("#my-table").tableMagic(sampleData);
+});
+</script>
+</body>
+</html>

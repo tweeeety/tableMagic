@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>tableMagic</title>
+<link rel="stylesheet" type="text/css" href="css/tableMagic.css" media="all">
+</head>
+<body>
+<!-- div -->
+<div id="my-table"></div>
+
+<!-- jquery -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<!-- sample data -->
+<script src="js/sampleData.js"></script>
+
+<!-- script -->
+<script src="js/SimpleDomManipulator.js"></script>
+<script src="js/Renderers.js"></script>
+<script src="js/DbDataManipulator.js"></script>
+<script src="js/tableMagic_base.js"></script>
+
+<!-- main -->
+<script>
+$(function(){
+  //console.time("TableMagic time");
+  var table = new TableMagic(testdata, opt).get();
+  //console.timeEnd("TableMagic time");
+  
+  //console.time("rendaring");
+  $("#my-table").html(table);
+  //console.timeEnd("rendaring");
+});
+</script>
+</body>
+</html>
