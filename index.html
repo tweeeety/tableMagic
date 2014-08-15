@@ -21,7 +21,8 @@
 <!-- main -->
 <script>
 $(function(){
-  var table = new TableMagic(testdata, opt).get();
+  var table = new TableMagic(testdata).get();
+  console.log(table);
   $("#my-table").html(table);
 });
 </script>

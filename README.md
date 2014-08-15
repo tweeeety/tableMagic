@@ -228,6 +228,7 @@ tableMagicに引数で渡すオプションです
 ## Todo
 * テスト
 * オプションの確認あんましできてない
+* 今のところパフォーマンスとか気にしてません
 
 ## Author
 * Tweeeety, Ryuichi Murata

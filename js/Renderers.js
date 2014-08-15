@@ -136,7 +136,7 @@ var Renderers = function() {
       
       var trClassName = '';
       trClassName = (this.trEvenClassName && this.trOddClassName && i%2==0)? this.trEvenClassName : this.trOddClassName;
-      if( i==0 && typeof this.trHeaderClassName == 'string') trClassName += ' ' + this.trHeaderClassName;
+      if( i==0 && this.trHeaderClassName && typeof this.trHeaderClassName == 'string') trClassName += ' ' + this.trHeaderClassName;
       trObj.addClass(trClassName);
       
       for( var j=0, jLen=array[i].length; j<jLen; j++ ){

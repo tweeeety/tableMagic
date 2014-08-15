@@ -23,6 +23,7 @@ var SimpleDomManipulator = function() {
     return this;
   }
   Constructor.prototype.addClass = function(className) {
+    if( !className ) return this;
     this.simpleDom.setAttribute("class",className);
     this.simpleDom.setAttribute("className",className);
     return this;
