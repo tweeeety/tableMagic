@@ -152,7 +152,7 @@ $(function(){
 
 ## Requirement
 jQueryプラグインで使う場合はもちろんjqueryが必要です。  
-バージョンでの動作確認まではしてませんが、だいたい使えるんじゃなかなーってくらいです。  
+jqバージョンでの動作確認まではしてませんが、だいたい使えるんじゃなかなー思います。  
 ```javascript
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 ```
