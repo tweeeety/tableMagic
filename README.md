@@ -8,9 +8,6 @@ json形式で受け取ったDBデータからテーブルタグ(table)を生成�
 
 ## Description
 json形式のMySQLデータなどをテーブルタグ(table)に変換して指定したjqueryのcontentに埋め込みます。  
-※補足  
-名前の由来は作った当初、[imageMagic](http://www.imagemagick.org/script/perl-magick.php)を触ってたのでなんとなくパクりましたw
-
 
 また、オプションにより以下のことができます
 
@@ -20,6 +17,10 @@ json形式のMySQLデータなどをテーブルタグ(table)に変換して指�
 * 簡易集計(列での合計、平均、またはその有無)
 * 描画後のcallback呼び出し
 * データの行と列の回転
+
+※補足  
+名前の由来は作った当初、[imageMagic](http://www.imagemagick.org/script/perl-magick.php)を触ってたのでなんとなくパクりましたw
+
 
 ## Demo
 ### サンプルデータ
