@@ -169,7 +169,8 @@ $(function(){
 </script>
 ```
 
-tableMagic.js(talbeMagic`j`.jsではない)を読み込んだ場合はjavascritライブラリなのでtableタグを返却します
+tableMagic.js(talbeMagic`j`.jsではない)は、javascritライブラリです。  
+こんな感じで使うことでtableタグを返却します
 ```html
 <script src="js/tableMagic.js"></script>
 <script>
