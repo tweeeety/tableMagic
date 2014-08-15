@@ -37,27 +37,7 @@ $(function(){
     {"totaled_date":"2014-01-25","entry":"1","invite":"0","sales":"14570","sales_dau":4,"sales_mau":39,"sales_uu":1,"mau":45,"dau":0},
     {"totaled_date":"2014-01-26","entry":"4","invite":"0","sales":"14600","sales_dau":1,"sales_mau":39,"sales_uu":0,"mau":45,"dau":0}
   ];
-  var titleOrderArr = ['totaled_date', 'dau','entry','invite','mau','sales','sales_dau','sales_mau','sales_uu'];
-  var titleHash = {
-    dau: 'dau',
-    entry: '登録者',
-    invite: '招待者',
-    mau: 'mau',
-    sales: '売上',
-    sales_dau: '売上day',
-    sales_mau: '売上mau',
-    sales_uu: '売上uu',
-    totaled_date: "日付"
-  };
-  var opt = {
-    titleOrderArr : titleOrderArr,
-    titleHash : titleHash,
-    renderName : "sumUpColRotate",
-  };
-  //if( opt && opt.callback ) opt.callback = function() { lineMarker($(".my-table"), opt) };
-  $("#my-table").tableMagic(sampleData, opt);
-  
-  
+  $("#my-table").tableMagic(sampleData);
 });
 </script>
 </body>

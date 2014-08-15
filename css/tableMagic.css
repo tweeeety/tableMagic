@@ -11,6 +11,7 @@ table.my-table th {
   vertical-align: middle;
   text-align: left;
   color: #fff;
+  white-space: nowarp;
 }
  
 table.my-table td {
@@ -20,6 +21,7 @@ table.my-table td {
   font-size: 9px;
   border-left: #fff 1px solid;
   background: #C3D8E3;
+  white-space: nowarp;
 }
 
 table.my-table .tdHeader {
@@ -37,7 +39,7 @@ table.my-table tr.trHeader th {
 }
 
 table.my-table .tdHeader {
-  width: 60px;
+  width: 70px;
 }
 table.my-table td {
   width: 60px;

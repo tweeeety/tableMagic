@@ -54,7 +54,7 @@ $(function(){
 ```
 * 結果  
 
-![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample02.png)
+![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample01.png)
 
 ### sample02
 オプションで以下を指定したサンプルです
@@ -98,7 +98,7 @@ $(function(){
 
 * 結果  
 
-![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample03.png)
+![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample02.png)
 
 
 ### sample03
@@ -147,7 +147,7 @@ $(function(){
 
 * 結果  
 
-![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample04.png)
+![image](https://github.com/tweeeety/tableMagic/blob/master/sample/tableMagicSample03.png)
 
 
 ## Requirement
