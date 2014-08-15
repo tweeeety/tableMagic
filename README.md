@@ -229,5 +229,5 @@ tableMagicに引数で渡すオプションです
 * Tweeeety, Ryuichi Murata
 
 ## License
-* MIT
+* MIT  
     *see LICENSE
