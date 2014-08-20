@@ -1,10 +1,12 @@
 tableMagic
 ==========
-json形式で受け取ったDBデータからテーブルタグ(table)を生成するjs libraryとjquery pluginです
+json形式で受け取ったDBデータからテーブルタグ(table)を生成するだけの  
+シンプルなjs libraryとjquery pluginです
 
 * /js/tableMagic.js(jsライブラリ)
-* /js/tableMagicj.js(jqueryプラグイン)
-とがあります
+* /js/tableMagicj.js(jqueryプラグイン)  
+
+とがあります。
 
 
 ## Description
