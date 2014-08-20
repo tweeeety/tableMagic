@@ -1,6 +1,6 @@
 tableMagic
 ==========
-json形式で受け取ったDBデータからテーブルタグ(table)を生成するヤツです
+json形式で受け取ったDBデータからテーブルタグ(table)を生成するjs libraryとjquery pluginです
 
 * /js/tableMagic.js(jsライブラリ)
 * /js/tableMagicj.js(jqueryプラグイン)
@@ -227,7 +227,7 @@ tableMagicに引数で渡すオプションです
     * `rotateAveCol` … 回転してから列で平均
     * `rotateAveColExceptZero` … 回転してから列で平均。ただし、数値が0のｶﾗﾑは母数として数えない
     
-* `callback` [function] … 表示後に呼び出すcallback
+* `callback` [function] … 表示後に呼び出すcallback(tableMagicj.jsのみ)
 
 ## Todo
 * テスト
