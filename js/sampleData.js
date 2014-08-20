@@ -61,5 +61,6 @@ var opt = {
   //renderName        : "rotateAveCol",
   //renderName        : "rotateAveColExceptZero",
   
-  callback : function(){console.log('sample callback');}
+  //callback : function(){console.log('sample callback');}
+  callback : undefined
 };

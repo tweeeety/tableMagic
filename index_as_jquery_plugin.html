@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <title>tableMagic</title>
 <link rel="stylesheet" type="text/css" href="css/tableMagic.css" media="all">
+</head>
 <style>
-.cellRow {
+table.my-table .cellRow {
   background-color: #ff0000;
 }
-.cellCol {
+table.my-table .cellCol {
   background-color: #ff0000;
 }
 </style>
-</head>
 <body>
 <!-- div -->
 <div id="my-table"></div>
@@ -30,7 +30,7 @@
 <!-- main -->
 <script>
 $(function(){
-  if( opt && opt.callback ) opt.callback = function() { lineMarker($(".my-table"), opt) };
+  if( opt && !opt.callback ) opt.callback = function() { lineMarker($(".my-table"), opt) };
   $("#my-table").tableMagic(testdata, opt);
 });
 </script>
