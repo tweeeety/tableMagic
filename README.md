@@ -3,8 +3,8 @@ tableMagic
 json形式で受け取ったDBデータからテーブルタグ(table)を生成するだけの  
 シンプルなjs libraryとjquery pluginです
 
-* /js/tableMagic.js(jsライブラリ)
-* /js/tableMagicj.js(jqueryプラグイン)  
+* /js/tablemagic.js(jsライブラリ)
+* /js/jquery.tablemagic.js(jqueryプラグイン)  
 
 とがあります。
 
@@ -25,7 +25,7 @@ json形式のMySQLデータなどをテーブルタグ(table)に変換して指�
 名前の由来は作った当初、[imageMagic](http://www.imagemagick.org/script/perl-magick.php)を触ってたのでなんとなくパクりましたw
 
 ####補足2
-tableMagic.js(jsライブラリ)のほうはjqueryに依存せずに使えます
+tablemagic.js(jsライブラリ)のほうはjqueryに依存せずに使えます
 
 
 ## Demo
@@ -51,7 +51,7 @@ var sampleData = [
 <div id="my-table"></div>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/tableMagicj.js"></script>
+<script src="js/jquery.tablemagic.js"></script>
 <script>
 $(function(){
   $("#my-table").tableMagic(sampleData);
@@ -73,7 +73,7 @@ $(function(){
 <div id="my-table"></div>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/tableMagicj.js"></script>
+<script src="js/jquery.tablemagic.js"></script>
 <script>
 $(function(){
   // title行の順番を指定
@@ -121,7 +121,7 @@ renderNameオプションでいくつかの描画(tableタグの生成)形式が
 <div id="my-table"></div>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/tableMagicj.js"></script>
+<script src="js/jquery.tablemagic.js"></script>
 <script>
 $(function(){
   // title行の順番を指定
@@ -171,7 +171,7 @@ jqバージョンでの動作確認まではしてませんが、だいたい使
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 
 <!-- script -->
-<script src="js/tableMagicj.js"></script>
+<script src="js/jquery.tablemagic.js"></script>
 <script>
 $(function(){
   $("#my-table").tableMagic(sampleData, opt);
@@ -179,10 +179,10 @@ $(function(){
 </script>
 ```
 
-tableMagic.js(talbeMagic`j`.jsではない)は、javascritライブラリです。  
+tablemagic.js(talbeMagic`j`.jsではない)は、javascritライブラリです。  
 こんな感じで使うことでtableタグを返却します
 ```html
-<script src="js/tableMagic.js"></script>
+<script src="js/tablemagic.js"></script>
 <script>
 var table = new TableMagic(data, opts).get();
 console.log(table); // <table>...</table>
@@ -229,7 +229,7 @@ tableMagicに引数で渡すオプションです
     * `rotateAveCol` … 回転してから列で平均
     * `rotateAveColExceptZero` … 回転してから列で平均。ただし、数値が0のｶﾗﾑは母数として数えない
     
-* `callback` [function] … 表示後に呼び出すcallback(tableMagicj.jsのみ)
+* `callback` [function] … 表示後に呼び出すcallback(jquery.tablemagic.jsのみ)
 
 ## Todo
 * テスト
